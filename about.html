@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>About Me</title>
+
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        /* Navigation */
+        .navbar {
+            background: #9d2828;
+            padding: 15px 30px;
+            color: white;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .nav-links {
+            display: flex;
+            list-style: none;
+        }
+
+        .nav-links li { margin-left: 20px; }
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+        }
+
+        /* ABOUT SECTION */
+        .about-section {
+            padding: 50px;
+            display: flex;
+            gap: 40px;
+            align-items: center;
+            justify-content: center;
+            background: #fafafa;
+        }
+
+        .about-text {
+            width: 50%;
+            font-size: 19px;
+            line-height: 1.7;
+            color: #333;
+            background: white;
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.08);
+        }
+
+        /* PROFESSIONAL PROFILE IMAGE */
+        .profile {
+            width: 330px;
+            border-radius: 15px;
+            box-shadow: 0 0 15px rgba(0,0,0,0.15);
+        }
+
+        /* For smaller screens */
+        @media(max-width: 850px){
+            .about-section {
+                flex-direction: column;
+                text-align: center;
+            }
+            .about-text { width: 90%; }
+        }
+
+    </style>
+
+</head>
+<body>
+
+<nav class="navbar">
+    <h2><b>Neha's Portfolio</b></h2>
+
+    <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="skills.html">Skills</a></li>
+        <li><a href="contact.html">Contact</a></li>
+    </ul>
+</nav>
+
+<section class="about-section">
+
+    <!-- Professional clean image -->
+    <img 
+        src="https://images.pexels.com/photos/4467687/pexels-photo-4467687.jpeg" 
+        alt="Profile Photo" 
+        class="profile">
+
+    <div class="about-text">
+        <h1>About Me</h1>
+        <br>
+        <p>
+            Hi, I’m <b>Neha Sahani</b> — a motivated student passionate about
+            web development, design and modern technology.  
+            I enjoy creating simple, clean and user-friendly web pages while learning new tools and concepts.
+        </p>
+        <br>
+        <p>
+            I believe in continuous learning, discipline and creativity.  
+            My goal is to grow as a developer, work on meaningful projects,  
+            and develop strong technical & communication skills.
+        </p>
+    </div>
+
+</section>
+
+</body>
+</html>

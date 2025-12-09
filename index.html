@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Neha Sahani - Portfolio</title>
+
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        .navbar {
+            background: #9d2828;
+            padding: 15px 30px;
+            color: white;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .nav-links {
+            display: flex;
+            list-style: none;
+        }
+
+        .nav-links li { margin-left: 20px; }
+        .nav-links a {
+            text-decoration: none;
+            color: white;
+            font-size: 18px;
+        }
+
+        /* NEW PROFESSIONAL HERO IMAGE */
+        .hero {
+            padding: 140px 40px;
+            text-align: center;
+            color: #000;
+            background-image: url('https://images.pexels.com/photos/4065893/pexels-photo-4065893.jpeg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            position: relative;
+        }
+
+        /* Soft white overlay for clean effect */
+        .hero::before {
+            content: "";
+            position: absolute;
+            top: 0; left: 0;
+            width: 100%; height: 100%;
+            background: rgba(255,255,255,0.5);
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 2;
+        }
+
+        .hero h1 {
+            font-size: 50px;
+            font-weight: bold;
+            margin-bottom: 15px;
+            color: #111;
+        }
+
+        .intro-text {
+            font-size: 20px;
+            width: 70%;
+            margin: 0 auto;
+            line-height: 1.6;
+            background: rgba(255,255,255,0.7);
+            padding: 20px;
+            border-radius: 12px;
+            font-weight: 500;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+
+<nav class="navbar">
+    <h2><b>Neha's Portfolio</b></h2>
+    <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="skills.html">Skills</a></li>
+        <li><a href="contact.html">Contact</a></li>
+    </ul>
+</nav>
+
+<section class="hero">
+    <div class="hero-content">
+        <h1>Welcome to My Portfolio</h1>
+
+        <p class="intro-text">
+            I am <b>Neha Sahani</b>, a motivated student who loves exploring
+            web development, design and programming.  
+            I enjoy learning new skills and building simple, creative projects.
+        </p>
+    </div>
+</section>
+
+</body>
+</html>
